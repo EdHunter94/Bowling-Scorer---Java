@@ -162,22 +162,29 @@ public class bowling
 		firstRoll = sc.nextInt();
 		if(firstRoll == 10)
 		{
-			score.push(10);
+			score.push(firstRoll);
 			System.out.println("Enter the score for the second roll:");
 			secondRoll = sc.nextInt();
 			if(secondRoll == 10)
 			{
-				score.push(10);
-				score.push(10);
+				score.push(secondRoll);
+				score.push(secondRoll);
+				//score.push(10);
 				System.out.println("Enter the score for the third roll");
 				thirdRoll = sc.nextInt();
-				score.push(10);
+				//score.push(10);
+				score.push(thirdRoll);
 				score.push(thirdRoll);
 			}
 			
 			else
 			{
 				score.push(secondRoll);
+				
+				System.out.println("Enter the score for the third roll");
+				thirdRoll = sc.nextInt();
+				score.push(thirdRoll);
+				
 			}
 			
 		}
